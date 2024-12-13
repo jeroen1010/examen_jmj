@@ -10,7 +10,7 @@ class SigninScreen extends StatelessWidget {
 
     final Map<String, String> formValues = {
       'username': '',
-      'password': '',
+      'contraseña': '',
     };
 
     return Scaffold(
@@ -71,7 +71,7 @@ class SigninScreen extends StatelessWidget {
         onPressed: () {
           Navigator.pushNamed(context, 'home'); // Regresa a la pantalla HomeScreen.
         },
-        child: const Icon(Icons.home),
+        child: const Icon(Icons.close),
       ),
     );
   }

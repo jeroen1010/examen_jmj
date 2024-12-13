@@ -1,6 +1,4 @@
-import 'package:examen_jmj/routes/app_routes_jmj.dart';
 import 'package:flutter/material.dart';
-import 'package:examen_jmj/theme/app_theme_jmj.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({Key? key}) : super(key: key);
@@ -16,12 +14,13 @@ class HomeScreen extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
+            const FlutterLogo(size: 200),
             ElevatedButton(
               onPressed: () {
-                //Navigator.pushNamed(context, AppRoutes.signinScreen); // Navegación a SigninScreen
+                Navigator.pushNamed(context, 'signin'); // Navegación a SigninScreen
               },
               style: ElevatedButton.styleFrom(
-                backgroundColor: Color.fromARGB(255, 13, 179, 19), 
+                backgroundColor: const Color.fromARGB(255, 13, 179, 19),
               ),
               child: const Text('Sign in'),
             ),
