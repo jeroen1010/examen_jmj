@@ -10,13 +10,32 @@ class AppRoutes {
       route: 'home',
       icon: Icons.house_rounded,
       name: 'Home Screen',
-      screen: const HomeScreen()),
+      screen: const HomeScreen(),
+    ),
     MenuOption(
       route: 'signin',
       icon: Icons.login_rounded,
       name: 'Sign In Screen',
       screen: const SigninScreen(),
     ),
+    MenuOption(
+      route: 'listview',
+      icon: Icons.list_alt_rounded,
+      name: 'List View',
+      screen: const ListviewScreen(), 
+    ),
+    /*MenuOption(
+      route: 'pistas',
+      icon: Icons.explore,
+      name: 'Pistas Screen',
+      screen: const PistasScreen(), 
+    ),
+    MenuOption(
+      route: 'monitores',
+      icon: Icons.tv,
+      name: 'Monitores Screen',
+      screen: const MonitoresScreen(), 
+    ),*/
   ];
 
   static Map<String, Widget Function(BuildContext)> getAppRoutes() {
@@ -28,10 +47,5 @@ class AppRoutes {
 
     return appRoutes;
   }
-
-  /*static Route<dynamic> onGenerateRoute (RouteSettings settings) {
-      return MaterialPageRoute(
-        builder: (context) => const AlertScreen()
-      );
-  }*/
 }
+
