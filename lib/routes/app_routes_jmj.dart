@@ -24,13 +24,13 @@ class AppRoutes {
       name: 'List View',
       screen: const ListviewScreen(), 
     ),
-    /*MenuOption(
+    MenuOption(
       route: 'pistas',
       icon: Icons.explore,
       name: 'Pistas Screen',
       screen: const PistasScreen(), 
     ),
-    MenuOption(
+    /*MenuOption(
       route: 'monitores',
       icon: Icons.tv,
       name: 'Monitores Screen',
